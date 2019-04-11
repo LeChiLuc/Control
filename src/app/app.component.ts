@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  app: string;
+  isLike: boolean = false;
+  ClickMe() {
+    this.isLike = !this.isLike;
+    this.isLike ? this.app = "Like" : this.app = "DisLike";
+  }
 }
